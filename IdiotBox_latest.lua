@@ -4708,7 +4708,7 @@ hook.Add("player_hurt", "Hook14", function(data)
 	if (gBool("More", "More", "Hitsounds")) then
 		local attacker = data.attacker
 		if attacker == me:UserID() then
-			surface.PlaySound("buttons/bell1.wav")
+			surface.PlaySound("buttons/hitsound.wav")
 		end
 	end
 end)
